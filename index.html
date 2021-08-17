@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,User-scalable=yes, maximum-scale=1.5">
+    
+    <!-- Iconos favicons -->
+	<link rel="icon" href="resources/iconos/png/favicon/favicon-16.png" sizes="16x16" type="image/png">
+	<link rel="icon" href="resources/iconos/png/favicon/favicon-32.png" sizes="32x32" type="image/png">
+	<link rel="icon" href="resources/iconos/png/favicon/favicon-192.png" sizes="192x192" 	type="image/png">
+    <!-- Previsualizacion compartir Facebook Whatsapp -->
+		<!-- Facebook debuger: https://developers.facebook.com/tools/debug/ -->
+		<!-- Meta image debe ser de 200x200px -->
+		<meta property="og:url" content="https://reynaud.000webhostapp.com/api/yt/" />
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content="YT Metadata Reynaud" />  
+		<meta property="og:image" itemprop="image" content="/resources/iconos/png/shareIcon/Reynaud_Icono.png" />
+		<meta property="og:image:alt" content="Logo Reynaud" />
+		<meta property="og:image:width" content="200" />
+    <meta property="og:image:height" content="200" />
+		<meta property="og:description" content="Proyecto extractor de metadatos video de youtube." />
+		<meta property="og:site_name" content="Reynaud" />
+		<meta property="og:locale" content="es_la" />
+		<meta property="article:author" content="Kevin Reynaud" />
+    <!-- Index -->
+	  <meta name="category" content="Proyecto Educativo kevin Reynaud">
+	  <meta name="description" content="Extractor metadatos videos de YT, KR.">
+
+    <title>Reynaud Metadata Youtube</title>
+
+    <!--Vincular CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header> 
+    <div id="linkIcons">
+      <a rel="Whatsapp" title="Whatsapp Reynaud" href="https://api.whatsapp.com/send?phone=+50431955226&amp;text=Hola,%20vengo%20de%20tu%20pagina,%20tengo%20una%20consulta" target="_blank">
+        <img class="icon-white" src="resources/iconos/svg/social/whatsapp-icon.svg" alt="Whatsapp Icon" width="30px" height="30px">
+      </a>
+      <a rel="Facebook" title="Facebook Reynaud" href="https://www.facebook.com/kevin14Reynaud" target="_blank">
+        <img class="icon-white" src="resources/iconos/svg/social/facebook-icon.svg" alt="Facebook Icon" width="30px" height="30px">
+      </a>
+      <a rel="Linkedin" title="Linkedin Reynaud" href="https://www.linkedin.com/in/kevin-reynaud/" target="_blank">
+        <img class="icon-white" src="resources/iconos/svg/social/linkedin-icon.svg" alt="Facebook Icon" width="40px" height="30px">
+      </a>
+      <a rel="GitHub" title="GitHub Reynaud" href="https://github.com/kevinReynaud" target="_blank">
+        <img class="icon-white" src="resources/iconos/svg/social/github-icon.svg" alt="Facebook Icon" width="40px" height="30px">
+      </a>
+    </div>
+    <p>Fines educucativos, Kevin Reynaud 2021</p>
+  </header>
+  <div id="contPrin">
+    <form id="ytUrlForm" align="center">
+      <h1>Extractor Metadatos Video Youtube</h1>
+      <input id="urlBox" type="url" placeholder="Paste YT video link here..." name="urlVid" value="" autocomplete="off">
+      <input type="submit" name="" value="Go">
+    </form>
+    <div id="loadBar">
+      <div id="intraBar"></div>
+    </div>
+    <div id="ytDataView">
+      
+    </div>
+  </div>
+  <div id="instruciones">
+    <b>Instruciones:</b><br>
+      <p>Pegue el enlace de un video de youtube y la web extraera los metadatos automaticamente, en caso contrario darle al boton de GO.</p>
+  </div>
+  
+  <script src="logic.js"></script>
+</body>
+</html>
+
