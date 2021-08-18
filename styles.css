@@ -78,9 +78,9 @@ input[type = "submit"]{
     width: 100%;
     height: auto;
     margin: auto;
-    padding: 8% 3%;
+    padding: 20px 3%;
     box-sizing: border-box;
-    background: #fdffff;
+    /*background: #fdffff;*/
     overflow-wrap: break-word;
 }
 #ytDataView a{
